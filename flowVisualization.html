@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+
+    <title>Flow Visualization</title>
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="flowVisualization.css" />
+
+    <!-- JS Libraries -->
+
+</head>
+
+<body onload="App.start();">
+    <div id='flowVisualization'>
+        <div class="navBar">
+            <span><a href="index.html">Akarsh Balasubramanyam</a></span>
+            <div class='navBarLinks'>
+                <a href="credits.html">Credits</a>
+                <a href="game.html">Catch Em</a>
+                <a href="sgdVisualization.html">SGD Visualization</a>
+                <a href="#flowVisualization">Flow Visualization</a>
+                <a href="visualization.html">Visualization</a>
+                <a href="index.html">About Me</a>
+            </div>
+        </div>
+        <div class="row text-center instructions">
+            <h3>Flow Visualization</h3>
+            <h5 class='text-center'>(<a class="scroll-message" href="#viz-navigation">Click here to Scroll down &
+                    see how to
+                    navigate the
+                    visualization)</a></h5>
+        </div>
+        <div class="row">
+            <div class="particleDiv col-md-6">
+                <div id="scene"></div>
+            </div>
+            <div class="col-md-6 plot">
+                <div id="plot"></div>
+            </div>
+        </div>
+        <div class="viz-navigation" id="viz-navigation">
+            <h3>Navigating the Visualization:-</h3>
+            <ul>
+                <li>Data Used: 042.csv</li>
+                <li>The Visualization on the left shows the fluid flow colored based on concentration</li>
+                <li>Use the Mouse or the Touchpad to rotate the cylinder along the respective axis</li>
+                <li>Use Scrolling inside the canvas to Zoom in or Zoom out</li>
+                <li>Use The Left and Right Arrow keys to move the cylinder in its respective direction inside the canvas
+                </li>
+                <li>Press <span id="key">"A"</span> or <span id="key">"D"</span> keys on the keyboard to move the plane
+                    along the Z axis to
+                    view the flow at that
+                    point</li>
+                <li>Press <span id="keyfast">"W"</span> or <span id="keyfast">"S"</span> keys to move the plane faster
+                </li>
+                <li>A scatter plot of the points matching the current plane position is shown on the right of the canvas
+                </li>
+                <li>At any point in time, Press <span id="keyreset">"R"</span> to reset the plane position back to
+                    (0,0,0)
+                </li>
+            </ul>
+        </div>
+        <div class="credits">
+            <h3>Credits</h3>
+            <ul>
+                <li>Dataset - Computational fluid flow simulation dataset from the San Diego Supercomputing Center:
+                    <span><i>
+                            <a href="https://www.uni-kl.de/sciviscontest/"> Dataset</a> </i> </span> </li>
+                <li>D3.js <span><i><a href='https://github.com/d3/d3/blob/master/LICENSE'>MIT License</a></i></span>
+                </li>
+                <li>Three.js <span><i>
+                            <a href="https://github.com/mrdoob/three.js/blob/dev/LICENSE">MIT License</a> </i> </span>
+                </li>
+                <li>Starter Code : <span><i>
+                            <a href="https://github.com/uic-evl/cs529-vds">Homework 3 Flow Visualization with
+                                Three.js</a> </i>
+                    </span>
+                </li>
+                <li>Scatter Plot using D3.js: <span><i>
+                            <a href="https://observablehq.com/@d3/scatterplot">Mike Bostock's Scatter Plot</a>
+                        </i> </span> </li>
+                <li>Three.js Disc Texture: <span><i>
+                            <a href="https://threejs.org/examples/textures/sprites/disc.png">disc.png</a>
+                        </i> </span> </li>
+                <li>Bootstrap: <span><i>
+                            <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE">MIT
+                                License</a>
+                        </i> </span> </li>
+                <li>Mozilla MDN Web Docks:
+                    <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">License</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="assets/Three/three.min.js"></script>
+    <script src="/assets/Three/OrbitControls.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.6/d3.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider@0.1.2/build/d3-simple-slider.js"></script>
+
+    <!-- JS Source -->
+    <script src="scene.js"></script>
+    <script src="particleSystem.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

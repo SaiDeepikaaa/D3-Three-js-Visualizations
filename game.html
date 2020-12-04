@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Catch Em!</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class='contact-page' id='catch-em'>
+        <div class="navBar">
+            <span><a href="index.html">Akarsh Balasubramanyam</a></span>
+            <div class='navBarLinks'>
+                <a href="credits.html">Credits</a>
+                <a href="#catch-em">Catch Em</a>
+                <a href="sgdVisualization.html">SGD Visualization</a>
+                <a href="flowVisualization.html">Flow Visualization</a>
+                <a href="visualization.html">Visualization</a>
+                <a href="index.html">About Me</a>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class='heading'>
+                <h3>Catch Em!</h3>
+            </div>
+        </div>
+        <div class='options text-center'>
+            <p>
+                Select the level of difficulty and click on Start<br /><br />Try to catch the shapes before they
+                disappear!
+            </p>
+            <div class='select'>
+                <h2 class="inline-block">Select your difficulty:</h2>
+                <select class="inline-block" id="difficulty">
+                    <option value="0">Easy</option>
+                    <option value="1">Medium</option>
+                    <option value="2">Hard</option>
+                </select>
+                <button class="button button1 inline-block" href="#game-section"
+                    onclick="startGame()"><span>Start</span></button>
+            </div>
+            <h3 id="zapped" class="blink"></h3>
+        </div>
+        <section class="contact-section text-center" id="game-section">
+            <svg id="game-svg" width="700" height="400" class="svg-canvas">
+            </svg>
+        </section>
+    </div>
+    <footer class="footer text-center">
+        <div class="container text-white">Designed and built by Akarsh Balasubramanyam</div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    height: 100%;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: transparent;
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.navBar>span>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.navBarLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBarLinks>a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.navBarLinks a:hover {
+    border-bottom: 1px solid #368bff;
+}
+
+.navBarLinks a.active {
+    color: #f2f2f2;
+    border-bottom: 1px solid #368bff;
+}
+
+.instructions {
+    padding-bottom: 3rem;
+}
+
+li {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+.viz-navigation {
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+h3 {
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+
+a.scroll-message {
+    text-decoration: none;
+    color: black;
+}
+
+
+#scene {
+    padding-left: 0.5rem;
+}
+
+path,
+line {
+    stroke: #777;
+}
+
+div.tooltip {
+    color: black;
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font: 12px sans-serif;
+    background: white;
+    opacity: 0.2;
+    border: 2px solid black;
+    border-radius: 1px 30px 30px 30px;
+    pointer-events: none;
+}
+
+span#key {
+    font-size: 1.8rem;
+}
+
+span#keyfast {
+    font-size: 1.8rem;
+}
+
+span#keyreset {
+    font-size: 1.8rem;
+    color: red;
+}
+
+.credits {
+    margin-left: 100px;
+    margin-right: 150px;
+    text-align: justify;
+    padding-bottom: 5rem;
+}

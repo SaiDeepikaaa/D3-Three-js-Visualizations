@@ -1,0 +1,126 @@
+body {
+    font-family: Arial;
+    margin: 0;
+
+}
+
+.credits-page {
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+    height: 100vh;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navBar>span>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.navBarLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBarLinks>a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.navBarLinks a:hover {
+    border-bottom: 1px solid #368bff;
+}
+
+.navBarLinks a.active {
+    color: #f2f2f2;
+    border-bottom: 1px solid #368bff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.credits-heading {
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 2rem !important;
+    line-height: 2.5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 10px;
+}
+
+.credits p {
+    color: #f2f2f2;
+    opacity: 75%;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-left: 3rem;
+    width: 50%;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+}
+
+li::before {
+    content: "\2023 \0020";
+    left: 0;
+}
+
+li {
+    color: #f2f2f2 !important;
+    opacity: 75%;
+
+    left: 0;
+    margin-bottom: 0.5rem !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.credits h3 {
+    margin-left: 3rem;
+    text-align: left !important;
+    color: #f2f2f2;
+    font-size: 1.7rem;
+}
+
+.credits a {
+    color: #368bff;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.footer {
+    position: fixed;
+    padding: 15px;
+    background: linear-gradient(to top,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer div {
+    color: #f2f2f2;
+    opacity: 50%;
+}

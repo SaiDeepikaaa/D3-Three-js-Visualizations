@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SGD Visualization</title>
+    <link rel="stylesheet" href="sgdVisualization.css">
+</head>
+
+<body>
+    <div class='sgd-visualization-page' id='sgd-visualization'>
+        <div class="navBar">
+            <span><a href="index.html">Akarsh Balasubramanyam</a></span>
+            <div class='navBarLinks'>
+                <a href="credits.html">Credits</a>
+                <a href="game.html">Catch Em</a>
+                <a href="#">SGD Visualization</a>
+                <a href="flowVisualization.html">Flow Visualization</a>
+                <a href="visualization.html">Visualization</a>
+                <a href="index.html">About Me</a>
+            </div>
+        </div>
+    </div>
+    <h3 class='text-center'>USA: Gun Victims Visualization</h3>
+    <h5 class='text-center'>(<a class="scroll-message" href="#viz-navigation">Click here to Scroll down & see how to
+            navigate the
+            visualization)</a></h5>
+    <div class="text-center" id="viz">
+    </div>
+    <div class='GunDeathDetails'>
+        <h3>Victims: <span class="cityState"></span></h3>
+        <h2><span class="maleColor">Male </span>Deaths: <span class="maleDeaths"></span> (
+            <span class='maleChildren'>Children: </span><span class="maleChildrenValue"></span>
+            <span class="maleTeens">, Teens: </span><span class="maleTeensValue"></span>
+            <span class="maleAdults">, Adults: </span><span class="maleAdultsValue"></span>)</h2>
+        <h2><span class="femaleColor">Female </span>Deaths: <span class="femaleDeaths"></span> (
+            <span class='femaleChildren'>Children: </span><span class="femaleChildrenValue"></span>
+            <span class="femaleTeens">, Teens: </span><span class="femaleTeensValue"></span>
+            <span class="femaleAdults">, Adults: </span><span class="femaleAdultsValue"></span>)</h2>
+        <div class="details" id="details"></div>
+    </div>
+    <div class="viz-navigation" id="viz-navigation">
+        <h3>Navigating the Visualization:-</h3>
+        <ul>
+            <li>The Initial view is a Choropleth of Gun Deaths in the United States of America. The scale provided
+                next to the map shows the number of deaths in that particular state. Darker the shade of Blue, greater
+                the number of deaths in the state</li>
+            <li>Hover over each state to see an overview of deaths based on Gender</li>
+            <li>By Scrolling down, An overview of the deaths in USA are provided categorized by Gender and Age
+                Group.
+                This data shown is from the year Dec 2012 - Dec 2013</li>
+            <li>The size of the circle is scaled based on the count of deaths in that city. Also color coded: <span
+                    class="maleColorRound"> Male</span>, <span class="femaleColorRound"> Female</span></li>
+            <li>Hovering over the city will show an overview of deaths based on Gender</li>
+            <li>At any time while viewing the state details, hovering over an empty space in the state, provides
+                overview of state details</li>
+            <li>Clicking on the state or any point outside the US map will zoom out and show up the original map</li>
+            <li>Once a city is selected, Scroll down to view the victim details grouped by state and categorized by
+                Gender and Age Group</li>
+            <li>Details of every individual death is available below the overview, Males:
+                <i class="fas fa-male"></i> and Females: <i class="fas fa-female"></i></li>
+            <li>Males and Females are color coded based on the Age Group, this helps in knowing the deaths by Age
+                Group
+            </li>
+            <li>Age Group Details
+                <ul>
+                    <li><span class="maleChildren">Children: </span><span class="femaleChildren">Ages 0 - 12</span>
+                    </li>
+                    <li><span class="maleTeens">Teens: </span><span class="femaleTeens">Ages 12 - 18</span></li>
+                    <li><span class="maleAdults">Adults: </span><span class="femaleAdults">Ages 18+</span></li>
+                </ul>
+            </li>
+            <li>Unknown Age group details are color coding using, Males:
+                <i class="fas fa-male maleUnknown"></i> and Females: <i class="fas fa-female femaleUnknown"></i></li>
+            <li>Clicking on any city within a state will provide an the overview and details of the deaths in the
+                city,
+                similar to state</li>
+            <li>Hovering over individual details will show up basic details about the individual i.e Name, Age and
+                Gender
+            </li>
+            <li>Clicking on the icon will open a new window with a news website that provides more detail about the
+                death</li>
+             <li>Disclaimer: Clicking on any of the city, populates the map with the deaths in the selected state, the deaths are
+                normalized by the total deaths in that state (Population data is not considered).</li>
+        </ul>
+    </div>
+    <div class="credits">
+        <h3>Credits</h3>
+        <ul>
+            <li>D3.js <span><i><a href='https://github.com/d3/d3/blob/master/LICENSE'>License</a></i></span></li>
+            <li>Zooming and Bounding Box for US Map: <span><i>
+                        <a href="https://observablehq.com/@d3/zoom-to-bounding-box"> Mike Bostock's Zoom to
+                            BoundingBox</a> </i> </span> </li>
+            <li>US Map Choropleth and Legend: <span><i>
+                        <a href="https://bl.ocks.org/wboykinm/dbbe50d1023f90d4e241712395c27fb3">Bill Morris's
+                            Modular US
+                            Choropleth</a> </i> </span> </li>
+            <li>Color Schemes for Gender and Age: <span><i>
+                        <a href="https://colorbrewer2.org/">Colorbrewer2</a> </i> </span> </li>
+            <li>Font Awesome Icons : <span><i>
+                        <a href="https://fontawesome.com/license/free">License</a> </i> </span> </li>
+            <li>W3 Schools : <span><i>
+                        <a href="https://www.w3schools.com/about/about_copyright.asp">w3schools.com</a> </i> </span>
+            </li>
+            <li>Mozilla MDN Web Docks:
+                <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">License</a>
+            </li>
+        </ul>
+    </div>
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" />
+    <script src="assets/d3/d3.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="sgdVisualization.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+body {
+    font-family: Arial;
+    margin: 0;
+
+}
+
+.contact-page {
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+    padding-bottom: 3rem;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navBar>span>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.navBarLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBarLinks>a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.navBarLinks a:hover {
+    border-bottom: 1px solid #368bff;
+}
+
+.navBarLinks a.active {
+    color: #f2f2f2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.heading h3 {
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.options h3 {
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 20px;
+}
+
+.svg-canvas {
+    border: 5px solid #368bcc;
+}
+
+.footer {
+    padding: 30px;
+    background: linear-gradient(to top,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.footer div {
+    color: #f2f2f2;
+    opacity: 50%;
+}
+
+.select h2 {
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    background: black;
+    color: #f2f2f2;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid #368bcc;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin: 0px
+}
+
+.options {
+    margin-bottom: 2rem;
+}
+
+select {
+    border: 2px solid #368bcc;
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 5px;
+    color: #f2f2f2;
+}
+
+
+.button1:hover {
+    color: #fff;
+}
+
+#rect {
+    color: white
+}
+
+
+.blink {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.options p {
+    color: #f2f2f2;
+    opacity: 75%;
+    font-size: 1.5rem;
+}

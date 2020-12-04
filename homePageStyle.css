@@ -1,0 +1,197 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.intro-body {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0.5) 75%,
+            #000000 100%),
+        url("assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navBar>span>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.navBarLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBarLinks>a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.navBarLinks a:hover {
+    border-bottom: 1px solid #368bff;
+}
+
+.navBarLinks a.active {
+    color: #f2f2f2;
+}
+
+.img-thumbnail {
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.introduction {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 10rem 0;
+}
+
+.introduction h1 {
+    font-family: Arial;
+    font-size: 2.5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.introduction h3 {
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid #368bcc;
+    color: #f2f2f2;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+.button1:hover {
+    background-color: #368bcc;
+    color: #fff;
+}
+
+.about-me {
+    margin-left: 10px;
+}
+
+.about-section {
+    padding: 5rem;
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.about-heading {
+    text-transform: uppercase !important;
+}
+
+.about-me-section p {
+    color: #f2f2f2;
+    opacity: 75%;
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 80%;
+}
+
+.about-section h3 {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+}
+
+.about-col {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about-section * {
+    box-sizing: border-box;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+}
+
+li::before {
+    content: "\2023 \0020";
+    left: 0;
+}
+
+li {
+    color: #f2f2f2 !important;
+    opacity: 75%;
+
+    left: 0;
+    margin-bottom: 0.5rem !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.skills-section>p {
+    margin-bottom: 1rem;
+    color: #368bbb;
+    font-size: 1.2rem;
+    margin-left: 12px;
+    text-align: justify;
+    width: 80%;
+}
+
+.footer {
+    padding: 30px;
+    background: linear-gradient(to top,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.footer div {
+    color: #f2f2f2;
+    opacity: 50%;
+}

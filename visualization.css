@@ -1,0 +1,119 @@
+body {
+    font-family: Arial;
+    margin: 0;
+
+}
+
+.visualization-page {
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+    padding-bottom: 3rem;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navBar>span>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.navBarLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBarLinks>a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.navBarLinks a:hover {
+    border-bottom: 1px solid #368bff;
+}
+
+.navBarLinks a.active {
+    color: #f2f2f2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-thumbnail {
+    height: 300px;
+    width: 800px;
+    border: 5px solid #368bcc;
+    border-radius: 15px 50px;
+}
+
+
+.heading h3 {
+    white-space: nowrap;
+    font-family: Arial;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-bottom: 20px;
+}
+
+.description h3 {
+    margin-left: 5rem;
+    text-align: left !important;
+    color: #f2f2f2;
+    font-size: 1.7rem;
+}
+
+.description p {
+    color: #f2f2f2;
+    opacity: 75%;
+    font-size: 1.2rem;
+    width: 90%;
+    margin-left: 5rem;
+    text-align: justify;
+}
+
+p {
+    color: #f2f2f2;
+    opacity: 75%;
+    font-size: 1.2rem;
+    width: 90%;
+    margin-left: 5rem;
+}
+
+hr {
+    border-color: #368bcc;
+    border-width: 0.05rem;
+    width: 80%;
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.footer {
+    padding: 30px;
+    background: linear-gradient(to top,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.footer div {
+    color: #f2f2f2;
+    opacity: 50%;
+}

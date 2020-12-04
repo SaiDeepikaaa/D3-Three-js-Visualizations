@@ -1,0 +1,243 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+.navBar {
+    overflow: hidden;
+    background-color: transparent;
+    background: linear-gradient(to bottom,
+            #000000 0%,
+            rgba(0, 0, 0, 0.9) 75%,
+            rgba(0, 0, 0, 0.8) 100%);
+}
+
+.navBar>span>a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 15px;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    white-space: nowrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.navBarLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navBarLinks>a:nth-child(1) {
+    margin-right: 30px;
+}
+
+.navBarLinks a:hover {
+    border-bottom: 1px solid #368bff;
+}
+
+.navBarLinks a.active {
+    color: #f2f2f2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+#state-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+div.tooltip {
+    color: black;
+    position: absolute;
+    width: 130px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font: 12px sans-serif;
+    background: white;
+    opacity: 0.2;
+    border: 2px solid black;
+    border-radius: 1px 30px 30px 30px;
+    pointer-events: none;
+}
+
+div.tooltip>span {
+    color: black;
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+div.tooltipCity {
+    color: white;
+    position: absolute;
+    width: 130px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font: 12px sans-serif;
+    background: black;
+    opacity: 0.1;
+    border: 2px solid white;
+    border-radius: 1px 30px 0px 30px;
+    pointer-events: none;
+}
+
+div.tooltipIcon {
+    color: black;
+    position: absolute;
+    width: 170px;
+    height: 90px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font: 12px sans-serif;
+    background: white;
+    opacity: 0.2;
+    border: 2px solid black;
+    border-radius: 1px 30px 30px 30px;
+    pointer-events: none;
+}
+
+div.tooltipIcon>span {
+    color: black;
+}
+
+div.tooltipCity>span {
+    color: white;
+}
+
+.legend {
+    position: absolute;
+    left: 110px;
+    top: 180px;
+}
+
+.axis text {
+    font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+div.GunDeathDetails h3 {
+    white-space: nowrap;
+    font-family: 'Times New Roman',
+        Times,
+        serif;
+    font-size: 2.5rem;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+div.GunDeathDetails h2 {
+    font-family: 'Times New Roman',
+        Times,
+        serif;
+    font-size: 1.5rem;
+    margin-left: 100px;
+}
+
+span.maleColor {
+    color: #2171b5
+}
+
+span.femaleColor {
+    color: #cb181d
+}
+
+span.maleColorRound {
+    color: blue;
+}
+
+span.femaleColorRound {
+    color: red;
+}
+
+span.maleChildren {
+    color: #bdd7e7
+}
+
+span.maleTeens {
+    color: #6baed6
+}
+
+span.maleAdults {
+    color: #2171b5
+}
+
+span.femaleChildren {
+    color: #fcae91
+}
+
+span.femaleTeens {
+    color: #fb6a4a
+}
+
+span.femaleAdults {
+    color: #cb181d
+}
+
+.details {
+    margin-top: 40px;
+}
+
+.viz-navigation {
+    margin-left: 100px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+.credits {
+    margin-left: 100px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+a.scroll-message {
+    text-decoration: none;
+    color: black;
+}
+
+i.maleUnknown {
+    color: #eff3ff
+}
+
+i.femaleUnknown {
+    color: #fee5d9
+}
